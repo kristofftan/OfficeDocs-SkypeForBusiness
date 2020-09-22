@@ -33,7 +33,9 @@ This article describes the prerequisites and configuration steps required to ena
 
 Before configuring On-network Conferencing, make sure your organization meets the following prerequisites: 
 
-- Ensure that all users in your organization who are enabled, or will be enabled, for Audio Conferencing are in Teams Only mode. The routing of inbound and outboud Audio Conferencing calls through On-network Conferencing is only supported for Teams meetings.
+- Ensure that all users in your organization who are enabled, or will be enabled, for Audio Conferencing are in Teams Only mode. 
+
+- The routing of inbound and outboud Audio Conferencing calls through On-network Conferencing is only supported for Teams meetings.
 
 - Assign Audio Conferencing licenses to all users who will be using On-network Conferencing.
 
@@ -41,13 +43,13 @@ Before configuring On-network Conferencing, make sure your organization meets th
 
 - Set up your Session Border Controller (SBC) for Direct Routing. For additional information, see [Plan Direct Routing](direct-routing-plan.md) and [Configure Direct Routing](direct-routing-configure.md). 
 
-  If you are setting up Direct Routing only for the purposes of Audio Conferencing, then you need only complete “Step 1: Connect your SBC” for On-network Conferencing.
+  If you are setting up Direct Routing only for the purposes of Audio Conferencing, then you need only complete “Only one Step: Connect your SBC” for On-network Conferencing.
   
 ## Enable the routing of dial-in calls to Microsoft Audio Conferencing through Direct Routing 
 
 To route dial-in calls made by your on-premises users to the Audio Conferencing service through Direct Routing, you need to configure appropriate routing rules for your SBCs and Private Branch Exchange(s) (PBXs).
 
-You need to configure the telephony equipment of your sites to route calls to any service number of the conference bridge of your organization through a Direct Routing trunk.
+You need to configure the telephony equipment of your sites to route calls to any service number of the conferencing bridge of your organization through a Direct Routing trunk.
 
 You can find the service numbers in Teams admin center under **Meetings -> Conferencing Bridges** or by using the Skype for Business Online PowerShell cmdlet Get-CsOnlineDialInConferencingBridge. For additional information, see a list of [Audio Conferencing numbers in Microsoft Teams](see-a-list-of-audio-conferencing-numbers-in-teams.md).
 
